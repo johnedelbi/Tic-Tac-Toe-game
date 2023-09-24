@@ -1,50 +1,71 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-weight: 600;
+    font-size: 26px;
+    background-color: #14213d;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    color:#ffffff;
 }
 
-.calculator-container {
-    width: 300px;
-    margin: 100px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+.container{
+    width: 100vw;  
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    display: grid;
     text-align: center;
+
+}
+.Tic-Tac-Toe-container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
 }
 
-.input-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+.title{
+    
+    background-color:#e5e5e5;
+    color: #14213d;
+    padding: 15px 0;
+    margin: 5px 0;
+    
 }
 
-.input-number {
-    width: 45%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-}
-
-.sum-button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+.cell{
+    font-size: 8rem;
+    display: grid;
+    width: 150px;
+    height: 150px;
+    background-color: #fca311;
+    margin: 5px;
+    align-items: center;
+    position: relative;
     cursor: pointer;
-    font-size: 16px;
-    outline: none;
 }
 
-.sum-button:hover {
-    background-color: #45a049;
+
+.cell:hover{
+    background-color: #e5e5e5;
 }
 
-.output {
+.win-box{
+    background-color: #e5e5e5;
+    color: #14213d;
+    padding: 15px 0;
+    margin: 5px 0;
+}
+
+.restart-Btn {
+    background-color: white;
+    border: 1px solid #14213d;
+    cursor: pointer;
     margin-top: 15px;
-    font-size: 18px;
-    font-weight: bold;
-}
+    padding: 10px 20px;
+  }
+  
+.restart-Btn:hover {
+    background-color: #14213d;
+    color: white;
+    border-color: white;
+  }
