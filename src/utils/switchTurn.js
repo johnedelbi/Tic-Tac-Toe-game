@@ -10,11 +10,16 @@
  * const total = sum(5, 3);
  * console.log(total); // Output: 8
  */
-const sum = (num1, num2) => {
-    if (typeof num1 !== 'number' || typeof num2 !== 'number') {
-        throw new TypeError('num1 and num2 should be numbers');
-    }
-    return num1 + num2;
+
+import data from "../data.js";
+import dom from '../dom.js';
+
+const switchTurn = () => {
+    data.oTurn= !data.oTurn;
+    console.log(data.oTurn)
+    const XO= data.oTurn? "O" : "X";
+    dom.text.innerText= `it's the ${XO} Turn`;
+
 };
 
-export default sum;
+export default switchTurn;
